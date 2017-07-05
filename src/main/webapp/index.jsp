@@ -32,8 +32,8 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/">
-          <!--<img src="img/RH_logo_green.png"/> -->
-          <img src="img/RH_logo.png"/>
+          <img src="img/RH_logo_bad.png"/> 
+          <!--<img src="img/RH_logo.png"/>-->
         </a>
       </div>
       <div class="collapse navbar-collapse navbar-collapse-1">

@@ -88,6 +88,12 @@
 	            <artifactId>javaee-api</artifactId>
 	            <version>7.0</version>
             	<scope>provided</scope>
+            	<exclusions>
+            		<exclusion>
+            			<groupId>com.sun.mail</groupId>
+            			<artifactId>javax.mail</artifactId>
+            		</exclusion>
+            	</exclusions>
             </dependency>	
  
         <!-- Test dependencies -->
