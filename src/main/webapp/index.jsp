@@ -77,7 +77,15 @@
 									  cache: false,
 								       contentType: "application/json",
 								       success: function() {
-									       console.log(itemId);
+										$( "#alertContainer" ).append(
+										   "<div class=\"alert alert-success alert-dismissable\">"+
+											"<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">"+
+											"	<span class=\"pficon pficon-close\"></span>"+
+											"</button>"+
+												"<span class=\"pficon pficon-ok\"></span>"+
+												"<strong>Success!</strong> Product added correctly to the cart "+
+											"</div>");		
+
 								       }
 									});
 						    });
