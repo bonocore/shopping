@@ -8,7 +8,7 @@
 </head>
 <body>
 	<jsp:include page="navi.jsp" />
-
+	<div class="alertContainer"></div>
 	<div class="container-fluid ">
 		<div  id="productListContainer" class="list-group list-view-pf list-view-pf-view">
 	</div>
@@ -85,7 +85,7 @@
 												"<span class=\"pficon pficon-ok\"></span>"+
 												"<strong>Success!</strong> Product added correctly to the cart "+
 											"</div>");		
-
+											$(itemId).hide();
 								       }
 									});
 						    });

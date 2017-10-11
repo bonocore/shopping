@@ -10,13 +10,29 @@
 	  <!--<img src="img/RH_logo.png"/>-->
 	  </a>
 	</div>
+	<script>
+		var pathname = window.location.pathname; 
+		console.log(pathname);
+		if(pathname.indexOf("index") != -1)
+		{
+    	console.log("index found");
+			$('#indexLink').addClass('active');
+			$('#shoppingLink').removeClass('active')
+		}	else
+		{
+			console.log("index not found");
+			$('#shoppingLink').addClass('active');
+			$('#indexLink').removeClass('active')
+		}
+	</script>
+
 	<div class="collapse navbar-collapse navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-primary">
-		<li >
-		  <a href="./index.jsp" >Home</a>
+		<li id="indexLink">
+		  <a  href="./index.jsp" >Home</a>
 		</li>
-		<li class="active">
-		  <a href="./shoppingCart.jsp" class="active">Carrello</a>
+		<li id="shoppingLink" >
+		  <a  href="./shoppingCart.jsp"> Carrello</a>
 		</li>
 	  </ul>
 	</div>
