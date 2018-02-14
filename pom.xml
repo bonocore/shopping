@@ -62,11 +62,11 @@
     <distributionManagement>
       <repository>
          <id>nexus</id>
-         <url>http://nexus:8081/content/repositories/releases</url>
+         <url>http://nexus:8081/repository/maven-releases</url>
       </repository>
        <snapshotRepository>
           <id>nexus</id>
-          <url>http://nexus:8081/content/repositories/snapshots</url>
+          <url>http://nexus:8081/repository/maven-snapshots</url>
        </snapshotRepository>
     </distributionManagement>
 
@@ -94,8 +94,8 @@
             			<artifactId>javax.mail</artifactId>
             		</exclusion>
             	</exclusions>
-            </dependency>	
- 
+            </dependency>
+
         <!-- Test dependencies -->
         <dependency>
             <groupId>junit</groupId>
@@ -180,13 +180,13 @@
 				</plugins>
 			</build>
 		</profile>
-       
+
         <profile>
-			<!-- When built in OpenShift the 'openshift' profile will be used when 
+			<!-- When built in OpenShift the 'openshift' profile will be used when
 				invoking mvn. -->
-			<!-- Use this profile for any OpenShift specific customization your app 
+			<!-- Use this profile for any OpenShift specific customization your app
 				will need. -->
-			<!-- By default that is to put the resulting archive into the 'deployments' 
+			<!-- By default that is to put the resulting archive into the 'deployments'
 				folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
